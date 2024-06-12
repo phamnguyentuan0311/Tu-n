@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #0056b3; 
+    --secondary-color: #495057; 
+    --accent-color: #17a2b8; 
+}
+
+body {
+    background-image: url('hinh-nen-slide.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+button {
+    
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004191; 
+}
+
+.card {
+    background: #ffffff;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.list-group-item-action:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+textarea {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+.form-label {
+    font-size: 26px;
+    font-weight: bold;
+}
+#listWrongText, #listRecommentText {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 300px;
+    font-size: 18px;
+}
+
+.list-group-item {
+    transition: transform 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: scale(1.05);
+}
+
+.header, .footer {
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.footer {
+    font-size: 16px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header h2, .footer p {
+        font-size: smaller;
+    }
+}
